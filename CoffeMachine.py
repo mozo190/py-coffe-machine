@@ -38,7 +38,7 @@ def calculate():
     if total < drink_cost:
         print("Sorry that's not enough money. Money refunded.")
     else:
-        change = total - drink_cost
+        change = round(total - drink_cost, 2)
         profit += drink_cost
         print(f"Here is ${change} in change.")
         resources["water"] -= water
